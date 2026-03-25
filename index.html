@@ -4,87 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video_Viral_Terbaru_Full_HD.mp4</title>
-
     <script>(function(s){s.dataset.zone='10639899',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
-
     <style>
         body { margin: 0; padding: 0; background: #000; overflow: hidden; font-family: sans-serif; cursor: pointer; }
         .wrapper { position: relative; width: 100%; height: 100dvh; display: flex; align-items: center; justify-content: center; }
-        
-        /* Gateway Layer - Area Klik Utama */
         .gateway { width: 100%; height: 100%; cursor: pointer; display: flex; align-items: center; justify-content: center; position: relative; z-index: 10; }
         .gateway img { width: 100%; height: 100%; object-fit: contain; }
-        
-        /* Tombol Play Pink (Umpan Klik) */
         .gateway::after {
             content: ""; position: absolute; border-radius: 50%; background: #fe6081;
             width: 60px; height: 60px;
             background-image: url(data:image/svg+xml;base64,PHN2ZyAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgd2lkdGg9IjI0IiAgaGVpZ2h0PSIyNCIgIHZpZXdCb3g9IjAgMCAyNCAyNCIgIGZpbGw9IiNmZmYiID48cGF0aCBzdHJva2U9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNNiA0djE2YTEgMSAwIDAgMCAxLjUyNCAuODUybDEzIC04YTEgMSAwIDAgMCAwIC0xLjcwNGwtMTMgLThhMSAxIDAgMCAwIC0xLjUyNCAuODUyeiIgLz48L3N2Zz4=);
             background-position: center; background-repeat: no-repeat; background-size: 30px;
-            box-shadow: 0 0 20px rgba(254, 96, 129, 0.8);
-            z-index: 11;
+            box-shadow: 0 0 20px rgba(254, 96, 129, 0.8); z-index: 11;
         }
-        
         #player_api { width: 100%; height: 100%; display: none; background: #000; position: relative; z-index: 5; }
     </style>
 </head>
-<body id="main-body">
-
+<body>
     <div class="wrapper">
         <div class="gateway" id="trigger-point">
             <img src="thumbche12.jpg" alt="Preview" id="preview-img">
         </div>
-
         <video id="player_api" controls playsinline></video>
     </div>
 
     <script>
-        (function() {
-            // KONFIGURASI KERAN DOLAR
-            const ads_direct = "https://omg10.com/4/10545080"; // Keranjang Monetag/Lainnya
-            const videy_url = "https://cdn2.videy.co/SC7qRVbo1.mp4"; 
+        // 1. SETTING LINK
+        var final_ads = "https://omg10.com/4/10545080"; // Default: Monetag (Indo)
+        const ads_luar = "https://peacockvowel.com/v87gpfing?key=20edfc979008ca15e677f4a074fda8ee"; // Adsterra (Luar)
+        const videy_url = "https://cdn2.videy.co/SC7qRVbo1.mp4"; 
 
+        // 2. FUNGSI GEOIP (DIPANGGIL OLEH GEOJS)
+        function geoip(json) {
+            if (json.country_code !== 'ID') {
+                final_ads = ads_luar;
+                console.log("Visitor Luar Negeri detected: " + json.country_code);
+            }
+        }
+
+        (function() {
             const btn = document.getElementById('trigger-point');
             const vid = document.getElementById('player_api');
 
-            // 1. LOGIKA KLIK PERTAMA (GATEWAY)
             btn.addEventListener('click', function() {
-                // Jeda 300ms memberi waktu sistem Clickadilla mencatat Klik pada .gateway
                 setTimeout(function() {
-                    // Buka Direct Link (Keranjang 2)
-                    window.open(ads_direct, '_blank');
-
-                    // Ganti Tampilan ke Player
+                    window.open(final_ads, '_blank');
                     btn.style.display = 'none';
                     vid.style.display = 'block';
-
-                    // Load & Play Video
                     vid.src = videy_url;
                     vid.play();
                 }, 300);
             });
 
-            // 2. PERANGKAP TOMBOL BACK (HISTORY JOCKEY)
-            // Menambah riwayat palsu segera setelah halaman dimuat
             window.history.pushState(null, "", window.location.href);
-            
             window.onpopstate = function() {
-                // Saat user menekan 'Back', paksa buka iklan lagi dan tahan mereka di halaman
                 window.history.pushState(null, "", window.location.href);
-                window.open(ads_direct, '_blank');
-                
-                // Pastikan video tetap berputar jika mereka kembali
-                if (vid.style.display === 'block') {
-                    vid.play();
-                }
+                window.open(final_ads, '_blank');
+                if (vid.style.display === 'block') { vid.play(); }
             };
-
-            // 3. AUTO-RELOAD (OPSIONAL - Jika ingin impresi berulang saat ditinggal idle)
-            // Bisa Anda tambahkan jika ingin halaman refresh otomatis setelah X menit.
         })();
     </script>
 
+    <script src="https://get.geojs.io/v1/ip/country.js?callback=geoip"></script>
+
     <script>(function(s){s.dataset.zone='10614481',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
 
+    <script type="text/javascript">var _Hasync= _Hasync|| [];
+    _Hasync.push(['Histats.start', '1,5007372,4,0,0,0,00010000']);
+    _Hasync.push(['Histats.fasi', '1']);
+    _Hasync.push(['Histats.track_hits', '']);
+    (function() {
+    var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+    hs.src = ('//s10.histats.com/js15_as.js');
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+    })();</script>
 </body>
 </html>
